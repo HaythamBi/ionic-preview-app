@@ -18,8 +18,10 @@ steps:
 - script: |
     sudo npm install -g ionic 
     sudo npm install -g cordova
-    sudo npm install
-    sudo ionic cordova platform add android
+        
+    cd ..\..
+
+    npm i
     
 
     
