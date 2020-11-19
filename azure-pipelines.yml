@@ -16,10 +16,10 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install -g ionic 
-    npm install -g @ionic/cli
-    npm install -g @angular/cli
-    npm i -g cordova
-    npm install
-    ionic cordova build ios
+    sudo npm install -g ionic 
+    sudo npm install -g @ionic/cli
+    sudo npm install -g @angular/cli
+    sudo npm install -g cordova
+    sudo npm install
+    
   displayName: 'npm install and build'
