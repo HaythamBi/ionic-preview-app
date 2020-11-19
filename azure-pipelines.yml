@@ -14,15 +14,11 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-- task: CordovaBuild@1
-  inputs:
-    platform: 'android'
-    configuration: '$(Configuration)'
-    outputPattern: 'bin'
+
 - script: |
     sudo npm install -g ionic 
     sudo npm install -g cordova
-    sudo npm i
+    sudo ionic cordova platform add ios
     
 
     
